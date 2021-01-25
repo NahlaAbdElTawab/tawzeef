@@ -1,0 +1,98 @@
+.titlepage h2 {
+    padding: 0px 0px 6px 0px;
+    font-weight: bold;
+    color: #000;
+    line-height: 46px;
+    border-bottom: #000 solid 1px;
+    font-size: 40px;
+    width: 367px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+  
+ button:focus {
+     outline: none;
+}
+ ul, li, ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+ 
+
+ img {
+     max-width: 100%;
+     height: auto;
+}
+ 
+ button {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+}
+ 
+
+ .We_are {
+     padding-top: 90px;
+     padding-bottom: 180px;
+     background: #fff;
+}
+ .We_are .titlepage {
+    padding-bottom: 60px;
+}
+ .We_are .titlepage {
+     padding-bottom: 60px;
+     text-align: center;
+}
+ .We_are .titlepage h2 {
+    margin-bottom: 30px;
+}
+ .We_are .titlepage span {
+     color: #3d3c3c;
+     font-size:17px;
+     line-height: 25px;
+}
+ .relative {
+     position: absolute;
+     bottom: 20px;
+     text-align: center;
+}
+ .carousel-caption p {
+    font-size: 20px;
+     line-height: 25px;
+     font-weight: 500;
+}
+ .carousel-item {
+     text-align: center;
+}
+ .carousel-control-prev {
+     left: inherit;
+}
+ #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
+     width: 65px;
+     height: 65px;
+     background: #000;
+     opacity: 1;
+     font-size: 30px;
+     color: #fff;
+     border-radius: 41px;
+}
+ #main_slider .carousel-control-prev:hover, #main_slider .carousel-control-next:hover, #main_slider .carousel-control-prev:focus, #main_slider .carousel-control-next:focus {
+     background: #e70b2a;
+     color: #fff;
+}
+ #main_slider a.carousel-control-prev {
+     position: absolute;
+     top: 105%;
+     margin-left: 44%;
+}
+ #main_slider a.carousel-control-next {
+     position: absolute;
+     top: 105%;
+     margin-right: 44%;
+}
+ 
+
+ 
