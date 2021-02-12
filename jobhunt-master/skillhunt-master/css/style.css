@@ -945,6 +945,15 @@ mark,
     max-width: 100%;
     height: auto;
 }
+.company-wrap .img-fluid {
+    max-height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 0px 0px 50px;
+}
+
+
 
 .img-thumbnail {
     padding: 0.25rem;
@@ -5087,7 +5096,7 @@ input[type="button"].btn-block {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 0rem 1rem;
 }
 
 .navbar>.container,
@@ -12791,7 +12800,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-    padding: 0em 0;
+    padding:2em 0em 0em 0em;
     position: relative;
 }
 
@@ -13943,3 +13952,170 @@ textarea.form-control {
         stroke-dashoffset: -136px;
     }
 }
+
+/* Internship section starts */
+
+.internship section {
+    display: inline-block;
+    max-height :min-content;
+}
+
+.container h2 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 25px 15px 15px;
+    color: #6C5CE7;
+    z-index: 1;
+}
+
+
+/* youtube tutorial https://www.youtube.com/watch?v=pRTHM-pVS9w */
+
+
+/* responsive internship browse card */
+
+.intern-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intern-card .hexagon {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 25px 5px 5px;
+}
+
+.intern-card .hexagon ::before {
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    width: 100%;
+    height: 60px;
+    /*background: radial-gradient(rgba(0, 0, 0, 0.15), transparent, transparent);*/
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.intern-card .hexagon:hover::before {
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+.intern-card .hexagon .shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    border-radius: 50%;
+}
+
+
+/* when hover the card come up */
+
+.intern-card .hexagon:hover .shape {
+    transform: translateY(-30px);
+}
+
+.intern-card .hexagon .shape img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* overlay content */
+
+.intern-card .hexagon .shape .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    /* linear-gradient(45deg, #03c4f4, rgb(3, 169, 244, 0.5)); */
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+/* hover overlay */
+
+.intern-card .hexagon:hover .shape .content {
+    opacity: 1;
+}
+
+
+/* position button of more category */
+
+.intern-card .more {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* youtube tutorial https://www.youtube.com/watch?v=G-H3wRS768s&list=PLSJxovi1IyDHSTa9073x-Fj5HXqs-qxpX&index=2 */
+
+
+/* style button */
+
+.intern-card .more button {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 150px;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background: lightgray;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 10px lightgray;
+    transition: 0.5s cubic-bezier(.4, .47, 0, 1.93);
+}
+
+
+/* hover botton */
+
+.intern-card .more button:hover {
+    width: 300px;
+    background: lightskyblue;
+    font-size: 30px;
+    cursor: pointer;
+    /*box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 8px lightskyblue;*/
+    transition: 1.5s cubic-bezier(.4, .47, 0, 1.93);
+}
+
+
+/*   clip-path: circle(50% at 50% 50%); */
+
+
+/* end of Internship section  *
