@@ -74,7 +74,7 @@ body {
     font-size: 2rem;
     font-weight: 100;
     line-height: 1.5;
-    color: #212529;
+    color: #623e6d;
     text-align: left;
     background-color: #fff;
 }
@@ -945,6 +945,7 @@ mark,
     max-width: 100%;
     height: auto;
 }
+
 .company-wrap .img-fluid {
     max-height: 100px;
     justify-content: center;
@@ -952,8 +953,6 @@ mark,
     text-align: center;
     margin: 0px 0px 0px 50px;
 }
-
-
 
 .img-thumbnail {
     padding: 0.25rem;
@@ -12800,7 +12799,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-    padding:2em 0em 0em 0em;
+    padding: 2em 0em 0em 0em;
     position: relative;
 }
 
@@ -13953,11 +13952,12 @@ textarea.form-control {
     }
 }
 
+
 /* Internship section starts */
 
 .internship section {
     display: inline-block;
-    max-height :min-content;
+    max-height: min-content;
 }
 
 .container h2 {
