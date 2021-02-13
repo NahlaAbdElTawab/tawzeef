@@ -40,12 +40,14 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="browsejobs.html" class="nav-link">Browse Jobs</a></li>
-                    <li class="nav-item"><a href="candidates.html" class="nav-link">Canditates</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item active"><a href="index.html" class="nav-link" style="padding-left:0 ;">Home</a></li>
+                    <li class="nav-item"><a href="browsejobs.html" class="nav-link" style="padding-left:0 ;">Browse Jobs</a></li>
+                    <li class="nav-item"><a href="candidates.html" class="nav-link" style="padding-left:0 ;">Canditates</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link" style="padding-left:0 ;">Blog</a></li>
+                    <li class="nav-item"><a href="FAQ.html" class="nav-link" style="padding-left:0 ;">FAQ  </a></li>
+                    <li class="nav-item"><a href="Applicant.html" class="nav-link" style="padding-left:0 ;">Applicant  </a></li>
 
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" style="padding-left:0 ;">Contact</a></li>
                     <li class="nav-item cta mr-md-1"><a href="new-post.html" class="nav-link">Post a Job</a></li>
                     <li class="nav-item cta cta-colored"><a href="job-post.html" class="nav-link">Want a Job</a></li>
 
@@ -284,22 +286,15 @@
     <!-- Introduction Video -->
     <section class="ftco-section services-section">
         <div class="container">
-            <div class="row d-flex">
+            <div id="page-wrap">
 
-                <div class="media-body">
+                <h1>Why Choose Us</h1>
 
 
-                    <div class="card row d-flex align-items-center ftco-animate
-		video_edit container col-12 align-items-center services-section p-4" style="border: none; ">
-                        <div class=" card-body col-10 d-flex p-0 pt-100">
-                            <h1 class="card-text mb-5 " style="font-family:sans-serif;">Introduction Video </h1>
-                        </div>
-                        <div class="ratio ratio-21x9 col-8  ">
-                            <video controls class="card-img-bottom " src="videos/intro.mp4"></video>
-                        </div>
-                    </div>
-                </div>
+                <object class="youtube" width="640" height="385"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/AnNd0rSCX9U?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" wmode="opaque" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
+
             </div>
+        </div>
     </section>
 
 
@@ -1375,6 +1370,18 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script>
+        var $origVideo = $(".youtube, .youtube embed");
+        var aspectRatio = $origVideo.attr("height") / $origVideo.attr("width");
+
+        $(window).resize(function() {
+            var wrapWidth = $("#page-wrap").width();
+            $origVideo
+                .width(wrapWidth)
+                .height(wrapWidth * aspectRatio);
+        }).trigger("resize");
+    </script>
 
 </body>
 

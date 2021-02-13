@@ -4989,14 +4989,14 @@ input[type="button"].btn-block {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding-left: 0;
+    padding-left: -1;
     margin-bottom: 0;
     list-style: none;
 }
 
 .nav-link {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0rem .5rem;
 }
 
 .nav-link:hover,
@@ -5070,7 +5070,7 @@ input[type="button"].btn-block {
     flex-basis: 0;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
-    flex-grow: 1;
+    flex-grow: .5;
     text-align: center;
 }
 
